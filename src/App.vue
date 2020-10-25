@@ -1,16 +1,16 @@
 <template>
- 
+ <div id="app" class="flex bg-gray-900 text-white min-h-screen">
+   <div class="nav w-24 fixed bg-blue-500 min-h-screen flex justify-center items-center">
+     <ul>
+       <li><a href="#"></a></li>
+     </ul>
+   </div>
+   <div class="w-full ml-24">
+     <router-view/>
+   </div>
+ </div>
 </template>
 
-<script>
-import SidebarNavigation from '@/components/SidebarNavigation'
-
-export default {
-  components: {
-    SidebarNavigation
-  }
-}
-</script>
 
 
 <style src="./css/main.css">
