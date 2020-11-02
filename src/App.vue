@@ -50,6 +50,7 @@
       </ul>
     </div>
     <div class="w-full ml-24">
+      <div class="container mx-auto"></div>
       <router-view />
     </div>
   </div>
