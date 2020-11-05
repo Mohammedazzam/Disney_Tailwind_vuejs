@@ -4,9 +4,23 @@
       class="nav w-24 fixed min-h-screen text-gray-500 flex justify-center items-center"
     >
       <Slide>
-        <router-link class="flex items-center mb-10">
-          <img src="@/assets/avatar.jpg"  alt="avatar" class="rounded-full w-12 h-12">
-          <div class="text-gray-500 ml-6">Mohammed</div>
+        <router-link to="/about" class="flex items-center mb-10">
+          <img
+            src="@/assets/avatar.jpg"
+            alt="avatar"
+            class="rounded-full w-12 h-12"
+          />
+          <div class="text-gray-500 ml-6 hover:text-gray-300">Mohammed</div>
+        </router-link>
+
+        <router-link to="/">
+          <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+            <path
+              class="heroicon-ui"
+              d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+            ></path>
+          </svg>
+          <span>search</span>
         </router-link>
       </Slide>
 
@@ -109,7 +123,7 @@
 </template>
 
 <script>
-import { Slide } from 'vue-burger-menu'  // import the CSS transitions you wish to use, in this case we are using `Slide`
+import { Slide } from "vue-burger-menu"; // import the CSS transitions you wish to use, in this case we are using `Slide`
 
 export default {
   components: {
