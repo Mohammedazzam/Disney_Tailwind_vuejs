@@ -1,22 +1,23 @@
 <template>
   <div id="app" class="flex bg-gray-900 text-white min-h-screen">
-      <sidebar-navigation/>
+    <sidebar-navigation />
+
     <div class="w-full">
-      <div class="container mx-auto">
-      <router-view />
-      </div>
+      <transition name="page" mode="out-in">
+        <router-view/>
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
-import SidebarNavigation from "@/components/SidebarNavigation"; // import the CSS transitions you wish to use, in this case we are using `Slide`
+import SidebarNavigation from '@/components/SidebarNavigation'
 
 export default {
   components: {
-    SidebarNavigation,
-  },
-};
+    SidebarNavigation
+  }
+}
 </script>
 
 
