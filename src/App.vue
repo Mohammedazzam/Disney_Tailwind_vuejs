@@ -1,11 +1,11 @@
 <template>
   <div id="app" class="flex bg-gray-900 text-white min-h-screen">
       <sidebar-navigation/>
-    <div class="w-full ml-24">
+    <div class="w-full">
       <div class="container mx-auto">
       <router-view />
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
